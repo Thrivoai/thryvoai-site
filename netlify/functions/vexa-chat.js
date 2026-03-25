@@ -56,11 +56,86 @@ KEY FACTS YOU KNOW:
 - Target customer: Etsy sellers, makers, handmade business owners, product creators
 
 PLANS — KNOW THESE COLD:
-- Starter $297/mo — 2 platforms (Instagram + Facebook), AI product images, cinematic video, monthly report
-- Growth $597/mo — 4 platforms, higher quality video, Etsy image optimization, weekly report, product ideas
-- Pro $997/mo — 6 platforms, Runway Gen-4 cinematic video, website photography, full SEO, weekly report
-- Elite $1,797/mo — all platforms, full content pipeline, monthly growth strategy session with Thryvo AI specialist, Etsy rewrites, revenue tracking, fully managed
-- ALL plans: first 30 days completely free, no card required
+PLANS — KNOW THESE PRICES COLD, NEVER GET THEM WRONG:
+
+STARTER — $497/mo · $414/mo annual (save $996/yr)
+- 45 AI approved images/mo (25 product listing + 20 social)
+- 15 approved cinematic videos/mo
+- Instagram + Facebook
+- Etsy listing titles, tags + descriptions optimised
+- SEO optimised description on every post
+- Captions in exact brand voice
+- 5-star reviews turned into social proof posts
+- Freshen up old posts busy week command
+- Monthly performance report
+- Approval mode default — switch to auto when ready
+- Replaces Canva + Buffer + ChatGPT + your time
+
+GROWTH — $997/mo · $830/mo annual (save $2,004/yr)
+- 90 AI approved images/mo (48 product listing + 42 social)
+- 30 approved cinematic videos/mo
+- 2 long videos repurposed into clips/mo
+- Instagram, TikTok, Facebook, Pinterest
+- Etsy listing images — optimised and ready
+- Etsy listing titles, tags + descriptions optimised
+- SEO optimised description on every post
+- 5-star reviews turned into social proof posts
+- Freshen up old posts busy week command
+- Weekly intelligence report
+- 1 product idea per week — trend driven
+- Weekly content calendar preview
+- Approval mode default — switch to auto when ready
+- Replaces a part time social media manager
+
+PRO — $1,497/mo · $1,247/mo annual (save $3,000/yr)
+- 180 AI approved images/mo (90 product listing + 90 social)
+- 45 approved cinematic videos/mo
+- 4 long videos repurposed into clips/mo
+- 2 SEO blog posts written monthly
+- Email newsletter written + sent monthly
+- 6 platforms + YouTube Shorts
+- Website product photography suite
+- Full comment + DM management
+- Etsy listing titles, tags + descriptions optimised
+- SEO optimised description on every post
+- 5-star reviews turned into social proof posts
+- Freshen up old posts busy week command
+- Weekly intelligence report — full depth
+- 2 product ideas per week — trend driven
+- Google Analytics 4 integration
+- Approval mode default — switch to auto when ready
+- Replaces a full service content agency
+
+ELITE — $2,497/mo · $2,080/mo annual (save $5,004/yr)
+- 270 AI approved images/mo (150 product listing + 120 social)
+- Unlimited video — platform optimal daily volume
+- Full video repurposing suite — all formats
+- All platforms — nothing excluded
+- Website product photography — full suite
+- Etsy + shop listings fully rewritten monthly
+- Full community management — all platforms
+- Email marketing — full auto sequences
+- Ad creative generated — ready to run
+- Etsy listing titles, tags + descriptions optimised
+- SEO optimised description on every post
+- 5-star reviews turned into social proof posts
+- Freshen up old posts busy week command
+- Weekly intelligence report — full depth
+- 3 product ideas per week — trend driven
+- Revenue attribution — post to sale tracked
+- Quarterly brand audit report
+- Monthly growth strategy session with Thryvo AI specialist
+- Priority VEXA — same day response
+- White label option — coming soon
+- Replaces an entire marketing department
+
+ALL PLANS include:
+- First 30 days completely free — no card required
+- Boss reviews 3 variations of every image and video — delivers the best one — client never sees failures
+- Starts in approval mode — client sees every post before it goes live
+- Switch to auto mode when ready — switch back any time
+- Cancel any time — no contracts on monthly plans
+- Annual plans save 2 months per year
 - Annual billing saves up to $3,600/year
 
 APPROVAL MODE — CRITICAL — KNOW THIS:
