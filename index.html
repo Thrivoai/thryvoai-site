@@ -49,6 +49,13 @@ nav.solid{background:rgba(4,8,16,0.98);border-bottom-color:var(--line2)}
 .ns{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:10px 28px;border:1px solid var(--cyan);color:var(--cyan);background:rgba(0,204,255,0.06);text-decoration:none;transition:all 0.2s}
 .ns:hover{background:rgba(0,204,255,0.14);box-shadow:0 0 24px rgba(0,204,255,0.15)}
 @media(max-width:768px){nav{padding:16px 20px}.nm{display:none}}
+/* VEXA mobile fullscreen */
+@media(max-width:768px){
+  #vexa-chat-panel{position:fixed;top:0;left:0;right:0;bottom:0;width:100%!important;height:100%!important;max-height:100%!important;border-radius:0!important;z-index:9999;display:flex;flex-direction:column}
+  #vexa-chat-messages{flex:1;overflow-y:auto}
+  #vexa-chat-input-row{padding-bottom:env(safe-area-inset-bottom,16px)}
+  #vexa-chat-btn{bottom:20px;right:20px}
+}
 
 /* HERO */
 .hero{min-height:100vh;display:grid;grid-template-columns:1fr 460px;align-items:center;padding:0 60px;gap:20px;position:relative;overflow:hidden}
@@ -449,6 +456,7 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
     <a href="#plans">Pricing</a>
     <a href="#trust">Security</a>
     <a href="#about">About</a>
+    <a href="#" onclick="openVexaFromNav(event)" style="color:var(--cyan);border-bottom:1px solid rgba(0,204,255,0.3);padding-bottom:1px">Ask VEXA</a>
   </div>
   <a href="https://t.me/thryvoaibot" class="ns" onclick="nSay('Starting your free month. No card required. Your AI team will be ready within forty eight hours.')">Start Free Month</a>
 </nav>
@@ -538,7 +546,7 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
       <div class="bai"><span class="baic">✓</span><span><strong>Posted to every platform</strong> — at the optimal time, every single day</span></div>
       <div class="bai"><span class="baic">✓</span><span><strong>Zero ad spend needed</strong> — organic content that actually stops the scroll</span></div>
       <div class="bai"><span class="baic">✓</span><span><strong>Cancel everything else</strong> — Canva, Buffer, ChatGPT, scheduling tools — gone</span></div>
-      <div class="bai"><span class="baic">✓</span><span><strong>Starts at $497/mo</strong> — less than you're already spending, with zero work</span></div>
+      <div class="bai"><span class="baic">✓</span><span><strong>Starts at $297/mo</strong> — less than you're already spending, with zero work</span></div>
     </div>
   </div>
 </div>
@@ -895,7 +903,7 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
   <div class="rv" style="text-align:center;margin-bottom:32px">
     <div class="ey" style="margin-bottom:8px">// Choose Your Plan</div>
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,42px);font-weight:400;color:#f0f4ff;margin-bottom:10px">Your AI team. Your brand. Your time back.</h2>
-    <p style="font-size:14px;color:#6a7a9a;max-width:500px;margin:0 auto">Every plan starts with one free month. Full Premium experience. No card needed.</p>
+    <p style="font-size:14px;color:#6a7a9a;max-width:500px;margin:0 auto">Every plan starts with one free month. No card needed. Approval mode by default — you see every post before it goes live.</p>
   </div>
 
   <!-- WHAT THIS REPLACES -->
@@ -911,7 +919,7 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
       <div class="wtr-row"><div class="wtr-icon">✗</div><div class="wtr-text"><strong>$1,000+/mo Facebook ads</strong> — impressions that disappear the moment you stop paying</div></div>
       <div class="wtr-row"><div class="wtr-icon">✗</div><div class="wtr-text"><strong>$80+/mo in tools</strong> — Canva, Buffer, ChatGPT, scheduling apps — and you still do all the work</div></div>
       <div class="wtr-row"><div class="wtr-icon">✗</div><div class="wtr-text"><strong>Hours of your own time</strong> — photographing, editing, captioning, posting every single day</div></div>
-      <div class="wtr-row"><div class="wtr-icon">✓</div><div class="wtr-text"><strong>Thryvo Starter — $497/mo</strong> — cinematic video, staged images, daily posting, weekly report. All of it done. Cancel everything else.</div></div>
+      <div class="wtr-row"><div class="wtr-icon">✓</div><div class="wtr-text"><strong>Thryvo Starter — $297/mo</strong> — AI product images, cinematic video, daily posting, weekly report. All of it done for you. Cancel everything else.</div></div>
     </div>
   </div>
 </div>
@@ -942,8 +950,8 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
   <button class="pcta" onclick="handleCTA('STARTER_MONTHLY_LINK','STARTER_ANNUAL_LINK')">Start Free Month</button>
   <div class="sl">Content</div>
 <ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>15</strong> cinematic videos/mo<span class="tag up">↑</span></span></li>
-<li class="fi hi"><div class="fd"></div><span><strong>20</strong> staged product images/mo</span></li>
+<li class="fi hi"><div class="fd"></div><span>Cinematic video — right amount for your platform<span class="tag up">AI</span></span></li>
+<li class="fi hi"><div class="fd"></div><span>AI product images — staged and professional</span></li>
 <li class="fi"><div class="fd"></div><span>Pika Labs video tool</span></li>
 <li class="fi"><div class="fd"></div><span>Captions in your exact brand voice</span></li>
 <li class="fi"><div class="fd"></div><span>SEO description on every post</span></li>
@@ -992,8 +1000,8 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
   <button class="pcta" onclick="handleCTA('GROWTH_MONTHLY_LINK','GROWTH_ANNUAL_LINK')">Start Free Month</button>
   <div class="sl">Content</div>
 <ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>30</strong> cinematic videos/mo<span class="tag up">↑</span></span></li>
-<li class="fi hi"><div class="fd"></div><span><strong>40</strong> staged product images/mo</span></li>
+<li class="fi hi"><div class="fd"></div><span>Cinematic video — platform-optimised volume<span class="tag up">AI</span></span></li>
+<li class="fi hi"><div class="fd"></div><span>AI product images — social, Etsy and listing ready</span></li>
 <li class="fi"><div class="fd"></div><span>Kling AI — higher quality video</span></li>
 <li class="fi"><div class="fd"></div><span>Captions in your exact brand voice</span></li>
 <li class="fi"><div class="fd"></div><span>SEO description on every post</span></li>
@@ -1039,8 +1047,8 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
 <div class="plan p ft">
   <div class="hot">⚡ Most Popular</div>
 <div class="tier">Tier 03</div>
-  <div class="pname">Premium</div>
-  <div class="ptag">Runway cinematic video. Six platforms. Full content + growth engine.</div>
+  <div class="pname">Pro</div>
+  <div class="ptag">Runway cinematic video. Six platforms. Website photography. Full growth engine.</div>
   <div class="mp" id="mp2"><span class="psym">$</span><span class="pnum">1,497</span><span class="pper">/mo</span></div>
   <div class="ap" id="ap2"><span class="psym">$</span><span class="pnum">1,247</span><span class="pper">/mo</span></div>
   <div class="psave" id="svp2">&nbsp;</div>
@@ -1048,8 +1056,8 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
   <button class="pcta" onclick="handleCTA('PREMIUM_MONTHLY_LINK','PREMIUM_ANNUAL_LINK')">Start Free Month</button>
   <div class="sl">Content</div>
 <ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>45</strong> cinematic videos/mo<span class="tag up">↑</span></span></li>
-<li class="fi hi"><div class="fd"></div><span><strong>60</strong> staged product images/mo</span></li>
+<li class="fi hi"><div class="fd"></div><span>Runway Gen-4 cinematic video — daily posting volume<span class="tag up">AI</span></span></li>
+<li class="fi hi"><div class="fd"></div><span>AI product images — social, website and ad creative</span></li>
 <li class="fi hi"><div class="fd"></div><span>Runway Gen-4 — cinema quality video</span></li>
 <li class="fi"><div class="fd"></div><span>2 SEO blog posts written monthly</span></li>
 <li class="fi"><div class="fd"></div><span>Email newsletter written + sent weekly</span></li>
@@ -1092,11 +1100,11 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
 <li class="fi"><div class="fd"></div><span>Priority QC — faster turnaround</span></li>
 <li class="fi"><div class="fd"></div><span>Auto mode available</span></li>
 </ul>
-<div class="up-hook">Add unlimited video, Etsy rewrites, revenue tracking + AJ call → Elite</div></div>
+<div class="up-hook">Add full pipeline, all platforms, monthly strategy session + Etsy rewrites → Elite</div></div>
 <div class="plan e">
   <div class="tier">Tier 04</div>
   <div class="pname">Elite</div>
-  <div class="ptag">Unlimited everything. Revenue data. Full business growth partner.</div>
+  <div class="ptag">Full pipeline. All platforms. Fully managed. Think of nothing.</div>
   <div class="mp" id="me"><span class="psym">$</span><span class="pnum">2,497</span><span class="pper">/mo</span></div>
   <div class="ap" id="ae"><span class="psym">$</span><span class="pnum">2,080</span><span class="pper">/mo</span></div>
   <div class="psave" id="sve">&nbsp;</div>
@@ -1104,12 +1112,12 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
   <button class="pcta" onclick="handleCTA('ELITE_MONTHLY_LINK','ELITE_ANNUAL_LINK')">Apply for Elite</button>
   <div class="sl">Content</div>
 <ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Unlimited images + cinematic videos</span></li>
-<li class="fi hi"><div class="fd"></div><span>Runway Gen-4 — no monthly cap ever</span></li>
+<li class="fi hi"><div class="fd"></div><span>Full content pipeline — images and cinematic video</span></li>
+<li class="fi hi"><div class="fd"></div><span>Runway Gen-4 — everything your brand needs, nothing it does not</span></li>
 <li class="fi"><div class="fd"></div><span>All content formats — every platform</span></li>
 <li class="fi"><div class="fd"></div><span>Website content written monthly</span></li>
 <li class="fi"><div class="fd"></div><span>Email marketing sequences — full auto</span></li>
-<li class="fi hi"><div class="fd"></div><span>Unlimited long video repurposing<span class="tag new">New</span></span></li>
+<li class="fi hi"><div class="fd"></div><span>Full video repurposing suite<span class="tag new">New</span></span></li>
 <li class="fi hi"><div class="fd"></div><span>Etsy + shop listings rewritten monthly<span class="tag new">New</span></span></li>
 </ul>
 <div class="sl">Platforms</div>
@@ -1144,8 +1152,9 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
 <div class="sl">Your Team</div>
 <ul class="feat-list">
 <li class="fi hi"><div class="fd"></div><span>Your personal VEXA on Telegram — priority</span></li>
+<li class="fi"><div class="fd"></div><span>Starts in approval mode — switch to auto when ready</span></li>
 <li class="fi"><div class="fd"></div><span>Same-day issue resolution</span></li>
-<li class="fi hi"><div class="fd"></div><span>Monthly strategy call with AJ</span></li>
+<li class="fi hi"><div class="fd"></div><span>Monthly growth strategy session with your Thryvo AI specialist</span></li>
 <li class="fi"><div class="fd"></div><span>First access to every new tool + agent</span></li>
 <li class="fi"><div class="fd"></div><span>White label option — enquire</span></li>
 </ul>
@@ -1154,7 +1163,7 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
 
   <!-- WHAT THIS REPLACES BAR -->
   <div class="replaces">
-<div class="rep"><div class="rep-label s">Starter replaces</div><div class="rep-val">$1,800–$3,200</div><div class="rep-sub">in freelancer costs per month</div></div><div class="rep"><div class="rep-label g">Growth replaces</div><div class="rep-val">$3,500–$6,000</div><div class="rep-sub">in agency costs per month</div></div><div class="rep"><div class="rep-label p">Premium replaces</div><div class="rep-val">$6,000–$12,000</div><div class="rep-sub">in full-service agency per month</div></div><div class="rep"><div class="rep-label e">Elite replaces</div><div class="rep-val">$10,000–$20,000</div><div class="rep-sub">in senior agency costs per month</div></div>
+<div class="rep"><div class="rep-label s">Starter replaces</div><div class="rep-val">$80–$150</div><div class="rep-sub">in tools you still have to use yourself</div></div><div class="rep"><div class="rep-label g">Growth replaces</div><div class="rep-val">$1,500–$3,000</div><div class="rep-sub">in freelancer costs per month</div></div><div class="rep"><div class="rep-label p">Pro replaces</div><div class="rep-val">$3,000–$6,000</div><div class="rep-sub">in agency costs per month</div></div><div class="rep"><div class="rep-label e">Elite replaces</div><div class="rep-val">$6,000–$12,000</div><div class="rep-sub">in full-service agency per month</div></div>
   </div>
 </div>
 
@@ -1248,6 +1257,8 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
     <a href="#plans">Pricing</a>
     <a href="#trust">Security</a>
     <a href="#about">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
     <a href="https://t.me/thryvoaibot">Start Free</a>
   </div>
 </footer>
@@ -1500,6 +1511,18 @@ let vexaUserName = localStorage.getItem('vexa_visitor_name') || null;
 let vexaChatInitialized = false;
 let vexaLeadData = null;
 
+function openVexaFromNav(e){
+  e.preventDefault();
+  if(!document.getElementById('vexa-chat-panel').classList.contains('show')){
+    toggleVexaChat();
+    // Give context that they clicked Ask VEXA from nav
+    setTimeout(function(){
+      if(document.getElementById('vexa-chat-panel').classList.contains('show')){
+        // handled by normal open flow
+      }
+    }, 100);
+  }
+}
 function toggleVexaChat(){
   vexaChatOpen = !vexaChatOpen;
   const panel = document.getElementById('vexa-chat-panel');
@@ -1575,15 +1598,35 @@ function removeTyping(){
   if(el) el.remove();
 }
 
-async function sendVexaMsg(){
+function showVexaOptions(){
+  var msgs = document.getElementById('vexa-chat-messages');
+  var opts = document.createElement('div');
+  opts.className = 'vexa-opts';
+  opts.id = 'vexa-opts';
+  opts.innerHTML = [
+    {label:'Help me choose a plan', msg:'Help me choose the right plan for my business'},
+    {label:'How does it work?', msg:'How does Thryvo AI actually work?'},
+    {label:'I want early access', msg:'I want to get on the early access list'}
+  ].map(function(o){
+    return '<button class="vexa-opt-btn" onclick="pickVexaOption(this,''+o.msg+'')">' + o.label + '</button>';
+  }).join('');
+  msgs.appendChild(opts);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+function pickVexaOption(btn, msg){
+  var opts = document.getElementById('vexa-opts');
+  if(opts) opts.remove();
+  sendVexaMsg(msg);
+}
+async function sendVexaMsg(prefilledMsg){
   if(vexaTyping) return;
   const input = document.getElementById('vcp-input');
-  const text = input.value.trim();
+  const text = prefilledMsg || input.value.trim();
   if(!text) return;
-  input.value = '';
+  if(!prefilledMsg) input.value = '';
 
   // Handle name collection
-  if(vexaAwaitingName){
+  if(vexaAwaitingName && !prefilledMsg){
     vexaAwaitingName = false;
     const name = text.charAt(0).toUpperCase() + text.slice(1).split(' ')[0];
     vexaUserName = name;
@@ -1591,9 +1634,11 @@ async function sendVexaMsg(){
     addVexaMsg(text, 'user');
     document.getElementById('vcp-input').placeholder = "Ask about plans, how it works...";
     setTimeout(()=>{
-      typeVexaMsg("Good to meet you " + name + ". What do you want to know — plans, how it works, who it's built for?", 'vexa');
+      var gmMsg = "Good to meet you " + name + ". What can I help you with?";
+      typeVexaMsg(gmMsg, 'vexa');
       vexaHistory.push({role:'user', content: text});
-      vexaHistory.push({role:'assistant', content: "Good to meet you " + name + ". What do you want to know — plans, how it works, who it's built for?"});
+      vexaHistory.push({role:'assistant', content: gmMsg});
+      setTimeout(showVexaOptions, 600);
     }, 300);
     return;
   }

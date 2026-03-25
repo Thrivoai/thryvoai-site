@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Thryvo AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #060910;
+      --surface: #0d1117;
+      --border: #1a2234;
+      --cyan: #00d4ff;
+      --cyan-dim: rgba(0, 212, 255, 0.08);
+      --text: #e8edf5;
+      --text-muted: #6b7a99;
+      --text-dim: #3d4f6e;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      border-bottom: 1px solid var(--border);
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--cyan-dim);
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .logo-text {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .logo-text span {
+      color: var(--cyan);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      background: var(--cyan-dim);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      border-radius: 4px;
+      padding: 4px 10px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-family: 'DM Mono', monospace;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .intro {
+      font-size: 17px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 56px;
+      padding: 24px 28px;
+      background: var(--cyan-dim);
+      border-left: 2px solid var(--cyan);
+      border-radius: 0 8px 8px 0;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 500;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      color: var(--text-muted);
+      font-size: 15px;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--cyan);
+      opacity: 0.6;
+    }
+
+    .contact-box {
+      margin-top: 56px;
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .contact-box p {
+      margin-bottom: 20px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cyan);
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'DM Mono', monospace;
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      padding: 10px 18px;
+      border-radius: 6px;
+      background: var(--cyan-dim);
+      transition: all 0.2s;
+    }
+
+    .contact-link:hover {
+      background: rgba(0, 212, 255, 0.15);
+      border-color: rgba(0, 212, 255, 0.5);
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-dim);
+      font-family: 'DM Mono', monospace;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-mark">
+      <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9" cy="9" r="7" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+        <circle cx="9" cy="9" r="3.5" fill="#00d4ff" opacity="0.8"/>
+      </svg>
+    </div>
+    <span class="logo-text">Thryvo <span>AI</span></span>
+  </header>
+
+  <main>
+
+    <div class="tag">Legal</div>
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective Date: March 23, 2026 &nbsp;·&nbsp; ThryvoAI LLC &nbsp;·&nbsp; State of Vermont</p>
+
+    <div class="intro">
+      By using Thryvo AI you agree to these terms. We have written them in plain English because we believe you should actually be able to read and understand what you are agreeing to.
+    </div>
+
+    <section>
+      <h2>01 — The Service</h2>
+      <p>Thryvo AI is an AI-powered social media marketing automation service operated by ThryvoAI LLC, a Vermont limited liability company. We provide small businesses with a dedicated AI marketing team — accessible via Telegram — that creates content, schedules posts, manages community engagement, and delivers weekly performance reports.</p>
+      <p>Your AI assistant is called VEXA. She is powered by artificial intelligence and acts as the primary interface between you and your AI marketing team.</p>
+    </section>
+
+    <section>
+      <h2>02 — Your Account</h2>
+      <p>To use Thryvo AI you must be at least 18 years old and have a valid Telegram account. You are responsible for maintaining the security of your account and for all activity that occurs under it.</p>
+      <p>You agree to provide accurate information during onboarding. False information may result in termination of your account.</p>
+    </section>
+
+    <section>
+      <h2>03 — Plans and Billing</h2>
+      <h3>Plans</h3>
+      <ul>
+        <li>Starter — $497/month</li>
+        <li>Growth — $997/month</li>
+        <li>Premium — $1,497/month</li>
+        <li>Elite — $2,497/month</li>
+      </ul>
+      <h3>Free Trial</h3>
+      <p>All plans include a 30-day free trial. No credit card is required to start. If you cancel before day 31 you owe nothing. Zero.</p>
+      <h3>Billing</h3>
+      <p>After your free trial, your chosen plan is billed monthly through Stripe. Annual billing is available at a discounted rate. You authorise us to charge your payment method on a recurring basis until you cancel.</p>
+      <h3>Annual Billing</h3>
+      <p>Annual plans are billed upfront for 12 months. If you cancel an annual plan early we will prorate a refund for unused complete months.</p>
+    </section>
+
+    <section>
+      <h2>04 — Cancellation and Refunds</h2>
+      <p>You can cancel at any time by messaging VEXA on Telegram. There are no cancellation fees and no contracts. Your service continues until the end of your current billing period.</p>
+      <p>Monthly plans are non-refundable after payment. If you have a billing issue or dispute please contact us before initiating a chargeback — we will resolve it directly and promptly.</p>
+      <p>If you experience a technical failure on our end that prevents your service from functioning for more than 72 consecutive hours we will credit your account for the affected days.</p>
+    </section>
+
+    <section>
+      <h2>05 — What We Deliver</h2>
+      <p>We will make reasonable commercial efforts to deliver the services described in your plan. Specific deliverables — posts per month, platforms covered, video creation — are described on our pricing page and may be updated with notice.</p>
+      <p>We do not guarantee specific follower counts, engagement rates, or sales results. Social media performance depends on many factors outside our control including platform algorithms, market conditions, and product demand.</p>
+      <p>All content created by your AI team remains subject to your approval before posting unless you have enabled auto-posting mode.</p>
+    </section>
+
+    <section>
+      <h2>06 — Your Content</h2>
+      <p>You own all content that your AI team creates for your business. We claim no rights over images, videos, captions, or reports generated for your account.</p>
+      <p>By providing product photos, brand materials, and business information to Thryvo AI, you grant us a limited licence to use that material solely for the purpose of delivering your service. We will never use your content to train AI models or for any purpose outside your service.</p>
+      <p>You are responsible for ensuring that content you provide does not infringe third-party intellectual property rights.</p>
+    </section>
+
+    <section>
+      <h2>07 — Acceptable Use</h2>
+      <p>You agree not to use Thryvo AI to:</p>
+      <ul>
+        <li>Create or publish content that is illegal, defamatory, harassing, or fraudulent</li>
+        <li>Violate the terms of service of any social media platform we post to on your behalf</li>
+        <li>Promote illegal products or services</li>
+        <li>Impersonate any person or entity</li>
+        <li>Attempt to access other clients' data or systems</li>
+        <li>Reverse engineer or attempt to extract our AI systems or proprietary processes</li>
+      </ul>
+      <p>Violation of these terms may result in immediate termination of your account without refund.</p>
+    </section>
+
+    <section>
+      <h2>08 — Social Media Access</h2>
+      <p>To post content on your behalf, we require OAuth posting permissions for your connected social media accounts. We use Buffer as our publishing platform — a service trusted by over 140,000 businesses worldwide.</p>
+      <p>Our access is limited to scheduling and publishing approved content. We cannot and will not access private messages on unsupported platforms, change your account settings, or delete your posts.</p>
+      <p>You can revoke our access at any time by removing Thryvo AI from your connected apps in each platform's settings. Revoking access stops all posting immediately.</p>
+    </section>
+
+    <section>
+      <h2>09 — Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, ThryvoAI LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of revenue, loss of data, or loss of business opportunity, arising from your use of the service.</p>
+      <p>Our total liability to you for any claim arising from these terms or your use of the service shall not exceed the amount you paid us in the 3 months preceding the claim.</p>
+    </section>
+
+    <section>
+      <h2>10 — Disclaimers</h2>
+      <p>Thryvo AI is provided "as is" without warranties of any kind, express or implied. We do not warrant that the service will be uninterrupted, error-free, or free of harmful components.</p>
+      <p>We are not responsible for the actions of third-party platforms including but not limited to Instagram, TikTok, Facebook, Pinterest, and YouTube. Platform policy changes, algorithm changes, or account restrictions are outside our control.</p>
+    </section>
+
+    <section>
+      <h2>11 — Governing Law</h2>
+      <p>These terms are governed by the laws of the State of Vermont, United States. Any disputes arising from these terms shall be resolved in the courts of Vermont, and you consent to the personal jurisdiction of those courts.</p>
+    </section>
+
+    <section>
+      <h2>12 — Changes to These Terms</h2>
+      <p>We may update these terms from time to time. If we make material changes we will notify you through your VEXA bot on Telegram at least 14 days before the changes take effect. Continued use of the service after that date constitutes acceptance of the new terms.</p>
+    </section>
+
+    <div class="contact-box">
+      <h3>Questions About These Terms</h3>
+      <p>If you have any questions about these terms of service, reach out directly. We are a real company run by real people and we will respond personally.</p>
+      <a href="mailto:aj@thryvoai.ai" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="#00d4ff" stroke-width="1.2"/><path d="M1 4l6 4 6-4" stroke="#00d4ff" stroke-width="1.2"/></svg>
+        aj@thryvoai.ai
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 ThryvoAI LLC &nbsp;·&nbsp; Vermont, USA &nbsp;·&nbsp; thryvoai.ai
+  </footer>
+
+</body>
+</html>

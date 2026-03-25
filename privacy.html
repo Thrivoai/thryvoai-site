@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Thryvo AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #060910;
+      --surface: #0d1117;
+      --border: #1a2234;
+      --cyan: #00d4ff;
+      --cyan-dim: rgba(0, 212, 255, 0.08);
+      --text: #e8edf5;
+      --text-muted: #6b7a99;
+      --text-dim: #3d4f6e;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* Background grid */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      border-bottom: 1px solid var(--border);
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--cyan-dim);
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .logo-text {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .logo-text span {
+      color: var(--cyan);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      background: var(--cyan-dim);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      border-radius: 4px;
+      padding: 4px 10px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-family: 'DM Mono', monospace;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .intro {
+      font-size: 17px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 56px;
+      padding: 24px 28px;
+      background: var(--cyan-dim);
+      border-left: 2px solid var(--cyan);
+      border-radius: 0 8px 8px 0;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 500;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      color: var(--text-muted);
+      font-size: 15px;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--cyan);
+      opacity: 0.6;
+    }
+
+    .contact-box {
+      margin-top: 56px;
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .contact-box p {
+      margin-bottom: 20px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cyan);
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'DM Mono', monospace;
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      padding: 10px 18px;
+      border-radius: 6px;
+      background: var(--cyan-dim);
+      transition: all 0.2s;
+    }
+
+    .contact-link:hover {
+      background: rgba(0, 212, 255, 0.15);
+      border-color: rgba(0, 212, 255, 0.5);
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-dim);
+      font-family: 'DM Mono', monospace;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 20px 24px; }
+      main { padding: 48px 24px 80px; }
+      footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-mark">
+      <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9" cy="9" r="7" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+        <circle cx="9" cy="9" r="3.5" fill="#00d4ff" opacity="0.8"/>
+      </svg>
+    </div>
+    <span class="logo-text">Thryvo <span>AI</span></span>
+  </header>
+
+  <main>
+
+    <div class="tag">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective Date: March 23, 2026 &nbsp;·&nbsp; ThryvoAI LLC &nbsp;·&nbsp; State of Vermont</p>
+
+    <div class="intro">
+      Thryvo AI is built on trust. We collect only what we need to run your AI marketing team, we never sell your data, and we never share it with anyone outside the tools required to deliver your service.
+    </div>
+
+    <section>
+      <h2>01 — Who We Are</h2>
+      <p>Thryvo AI is operated by ThryvoAI LLC, a Vermont limited liability company. We provide AI-powered social media marketing automation services for small businesses through our platform at thryvoai.ai and via our AI assistant VEXA on Telegram.</p>
+    </section>
+
+    <section>
+      <h2>02 — What We Collect</h2>
+      <h3>Information you give us</h3>
+      <ul>
+        <li>Your name, business name, and contact information during onboarding</li>
+        <li>Brand voice, visual style, and business preferences collected through our DNA onboarding process</li>
+        <li>Product photos and videos you send to your AI team for content creation</li>
+        <li>Your Telegram username to connect you with your dedicated AI assistant</li>
+        <li>Social media account access via OAuth — we never ask for or store passwords</li>
+      </ul>
+      <h3>Information collected automatically</h3>
+      <ul>
+        <li>Social media performance data from connected accounts (engagement, reach, clicks)</li>
+        <li>Content approval and feedback history to improve your brand profile over time</li>
+        <li>Payment and billing information processed securely through Stripe</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>03 — How We Use Your Data</h2>
+      <ul>
+        <li>To create, schedule, and publish social media content on your behalf</li>
+        <li>To generate product ideas, shoot guides, and weekly intelligence reports</li>
+        <li>To improve your AI team's understanding of your brand over time</li>
+        <li>To manage billing and subscription through Stripe</li>
+        <li>To send you service communications through Telegram and email</li>
+        <li>To monitor and manage your social media community when enabled by you</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>04 — How We Protect Your Data</h2>
+      <p>Every client account runs in a completely isolated instance with its own data store. Your brand data, content history, and DNA file cannot be accessed by any other client — this is enforced at the architecture level, not just policy.</p>
+      <p>All files are stored in Cloudflare R2 cloud storage in isolated client folders. Generated content is automatically deleted on a rolling schedule. Your DNA file — your brand knowledge — is stored permanently and is the only file we retain long term.</p>
+      <p>Social media connections use OAuth authentication only. We can publish approved content to your accounts. We cannot read private messages on unsupported platforms, change account settings, go live, or delete posts.</p>
+    </section>
+
+    <section>
+      <h2>05 — Who We Share Data With</h2>
+      <p>We do not sell your data. Ever. We share data only with the third-party tools required to deliver your service:</p>
+      <ul>
+        <li><strong style="color: var(--text)">Anthropic (Claude)</strong> — AI reasoning and content generation</li>
+        <li><strong style="color: var(--text)">Stripe</strong> — Payment processing</li>
+        <li><strong style="color: var(--text)">Buffer</strong> — Social media scheduling and publishing</li>
+        <li><strong style="color: var(--text)">Cloudflare R2</strong> — Secure file storage</li>
+        <li><strong style="color: var(--text)">Stability AI / Google Gemini / FLUX</strong> — Image generation</li>
+        <li><strong style="color: var(--text)">Runway / Kling AI / Pika Labs</strong> — Video creation (plan dependent)</li>
+        <li><strong style="color: var(--text)">OpusClip</strong> — Video repurposing (Growth plan and above)</li>
+        <li><strong style="color: var(--text)">Telegram</strong> — Client communication platform</li>
+      </ul>
+      <p>Each of these providers has their own privacy policy and data handling practices. We only share the minimum data required for each tool to function.</p>
+    </section>
+
+    <section>
+      <h2>06 — Data Retention</h2>
+      <ul>
+        <li>Generated images and video clips — deleted after 90 days</li>
+        <li>Published content files — deleted 30 days after posting</li>
+        <li>Client-sent photos — retained for 6 months</li>
+        <li>Your DNA brand file — retained permanently while your account is active</li>
+        <li>Upon cancellation — all data preserved for 30 days then permanently deleted unless you request otherwise</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>07 — Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Request a copy of all data we hold about your business</li>
+        <li>Request correction of any inaccurate information</li>
+        <li>Request deletion of your data at any time</li>
+        <li>Cancel your subscription with no further charges — no contracts, no lock-in</li>
+        <li>Revoke social media OAuth access at any time through your platform settings</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at the address below.</p>
+    </section>
+
+    <section>
+      <h2>08 — Cookies</h2>
+      <p>Our website thryvoai.ai uses minimal cookies for basic functionality and analytics. We do not use advertising cookies or tracking pixels. You can disable cookies in your browser settings without affecting your Thryvo AI service.</p>
+    </section>
+
+    <section>
+      <h2>09 — Children</h2>
+      <p>Thryvo AI is a business service intended for adults. We do not knowingly collect data from anyone under the age of 18.</p>
+    </section>
+
+    <section>
+      <h2>10 — Changes to This Policy</h2>
+      <p>If we make material changes to this privacy policy we will notify active clients through their Telegram bot before the changes take effect. The effective date at the top of this page will always reflect the most recent version.</p>
+    </section>
+
+    <div class="contact-box">
+      <h3>Questions or Requests</h3>
+      <p>If you have any questions about this privacy policy or want to exercise your data rights, reach out directly.</p>
+      <a href="/cdn-cgi/l/email-protection#99f8f3d9edf1ebe0eff6f8f0b7f8f0" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="2.5" width="12" height="9" rx="1.5" stroke="#00d4ff" stroke-width="1.2"/><path d="M1 4l6 4 6-4" stroke="#00d4ff" stroke-width="1.2"/></svg>
+        <span class="__cf_email__" data-cfemail="73121933071b010a051c121a5d121a">[email&#160;protected]</span>
+      </a>
+    </div>
+
+  </main>
