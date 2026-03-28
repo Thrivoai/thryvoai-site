@@ -444,6 +444,77 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
 .tgb:nth-child(2){animation-delay:0.2s}.tgb:nth-child(3){animation-delay:0.4s}
 @keyframes tgtd{0%,100%{opacity:0.4;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}
 @media(max-width:480px){#tg-demo-wrap{border-radius:12px;padding:14px}}
+
+/* ── VEXA HIRE: CONVO DEMO ── */
+.convo-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);padding:50px 20px}
+.convo-inner{max-width:780px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:700px){.convo-inner{grid-template-columns:1fr;gap:32px}}
+.convo-text-h{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(22px,3vw,34px);color:var(--text);line-height:1.2;margin-bottom:14px}
+.convo-text-h em{font-style:italic;background:linear-gradient(135deg,var(--cyan),var(--mag));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.convo-text-p{font-size:14px;color:var(--text2);line-height:1.8;font-weight:300;margin-bottom:10px}
+.convo-text-p strong{color:var(--text);font-weight:500}
+.convo-phone{background:rgba(2,6,14,0.95);border:1px solid rgba(0,204,255,0.1);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.convo-phone::before{content:'';display:block;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:0.4}
+.convo-bar{padding:12px 16px;border-bottom:1px solid rgba(0,204,255,0.06);display:flex;align-items:center;gap:10px}
+.convo-av{width:28px;height:28px;border-radius:50%;background:radial-gradient(circle,rgba(0,204,255,0.7),rgba(204,68,255,0.3));flex-shrink:0}
+.convo-name{font-size:12px;font-weight:600;color:var(--text)}
+.convo-status{font-family:'DM Mono',monospace;font-size:8px;color:var(--teal);letter-spacing:1px}
+.convo-msgs{padding:16px}
+.msg{margin-bottom:10px;max-width:85%}
+.msg-u{margin-left:auto;background:rgba(0,204,255,0.08);border:1px solid rgba(0,204,255,0.12);padding:9px 13px;border-radius:14px 14px 3px 14px}
+.msg-v{background:rgba(204,68,255,0.06);border:1px solid rgba(204,68,255,0.1);padding:9px 13px;border-radius:14px 14px 14px 3px}
+.msg p{font-size:12.5px;line-height:1.55;font-weight:300;color:var(--text)}
+.msg-label{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:3px}
+.msg-u .msg-label{color:var(--cyan);text-align:right}
+.msg-v .msg-label{color:var(--mag)}
+.msg-exec{background:rgba(0,221,170,0.06);border:1px solid rgba(0,221,170,0.12);padding:9px 13px;border-radius:14px 14px 14px 3px}
+.msg-exec .msg-label{color:var(--teal)}
+/* ── VEXA HIRE: PROMISE STRIP ── */
+.promise-strip-v{padding:50px 20px}
+.promise-inner-v{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+@media(max-width:700px){.promise-inner-v{grid-template-columns:1fr}}
+.promise-card-v{background:var(--bg);padding:28px 24px;text-align:center}
+.promise-icon-v{font-size:24px;margin-bottom:12px;display:block}
+.promise-h-v{font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px}
+.promise-p-v{font-size:12.5px;color:var(--text2);line-height:1.65;font-weight:300}
+/* ── VEXA HIRE: TRAINING ── */
+.train-section{max-width:700px;margin:0 auto;padding:50px 40px;text-align:center}
+@media(max-width:768px){.train-section{padding:50px 20px}}
+.train-h2{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(24px,3.5vw,40px);line-height:1.15;color:var(--text);margin-bottom:16px}
+.train-h2 em{font-style:italic;background:linear-gradient(135deg,var(--cyan),var(--mag));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.train-p2{font-size:15px;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:12px}
+.train-p2 strong{color:var(--text);font-weight:500}
+.train-steps2{display:flex;flex-direction:column;gap:0;max-width:520px;margin:32px auto 0;text-align:left}
+.train-step2{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(0,204,255,0.04)}
+.train-step2:last-child{border-bottom:none}
+.train-num2{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;font-style:italic;color:var(--text3);line-height:1}
+.train-step-h2{font-size:14px;font-weight:600;color:var(--text);margin-bottom:3px}
+.train-step-p2{font-size:12.5px;color:var(--text2);line-height:1.6;font-weight:300}
+/* ── VEXA HIRE: PLAN OVERRIDES ── */
+.plans-grid{grid-template-columns:1fr 1fr !important;max-width:880px !important}
+@media(max-width:650px){.plans-grid{grid-template-columns:1fr !important}}
+.vexa-does{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:var(--text);margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(0,204,255,0.06)}
+.ig2{margin-bottom:16px}
+.ig2-label{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:2.5px;text-transform:uppercase;color:#1e2e3e;margin-bottom:8px}
+.ig2-item{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:var(--text2);line-height:1.5;font-weight:300;padding:3px 0}
+.ig2-item.k{color:#c8d8ee;font-weight:400}
+.ig2-dot{flex-shrink:0;width:3px;height:3px;border-radius:50%;margin-top:6px}
+.plan.s .ig2-dot{background:#00ccff}.plan.g .ig2-dot{background:#7755ee}
+.epn2{font-family:'DM Mono',monospace;font-size:7.5px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-top:18px;padding-top:12px;border-top:1px solid rgba(0,221,170,0.08);text-align:center}
+/* ── VEXA HIRE: EVERY PLAN ── */
+.every-plan-sec{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);padding:50px 20px;margin-top:40px}
+.every-inner2{max-width:880px;margin:0 auto}
+.every-h2{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(22px,3vw,34px);color:var(--text);text-align:center;margin-bottom:6px}
+.every-h2 em{font-style:italic;background:linear-gradient(135deg,var(--cyan),var(--mag));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.every-sub2{text-align:center;font-size:14px;color:var(--text2);font-weight:300;margin-bottom:36px;line-height:1.6}
+.every-grid2{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+@media(max-width:700px){.every-grid2{grid-template-columns:1fr}}
+.every-card2{background:var(--bg2);padding:24px 22px}
+.ec2-h{font-size:14px;font-weight:600;color:var(--text);margin-bottom:6px}
+.ec2-p{font-size:12px;color:var(--text2);line-height:1.65;font-weight:300}
+/* ── VEXA HIRE: REPLACES OVERRIDE ── */
+.replaces{grid-template-columns:1fr 1fr !important;max-width:880px !important}
+
 </style>
 </head>
 <body>
@@ -639,7 +710,7 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
       <div class="bai"><span class="baic">✓</span><span><strong>Posted to every platform</strong> — at the optimal time, every single day</span></div>
       <div class="bai"><span class="baic">✓</span><span><strong>Zero ad spend needed</strong> — organic content that actually stops the scroll</span></div>
       <div class="bai"><span class="baic">✓</span><span><strong>Cancel everything else</strong> — Canva, Buffer, ChatGPT, scheduling tools — gone</span></div>
-      <div class="bai"><span class="baic">✓</span><span><strong>Starts at $297/mo</strong> — less than you're already spending, with zero work</span></div>
+      <div class="bai"><span class="baic">✓</span><span><strong>Starts at $497/mo</strong> — less than you're already spending, with zero work</span></div>
     </div>
   </div>
 </div>
@@ -993,309 +1064,181 @@ footer{padding:36px 60px;border-top:1px solid var(--line);display:flex;align-ite
 
 <!-- PLANS -->
 <div id="plans">
-  <div class="rv" style="text-align:center;margin-bottom:32px">
-    <div class="ey" style="margin-bottom:8px">// Choose Your Plan</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,42px);font-weight:400;color:#f0f4ff;margin-bottom:10px">Your AI team. Your brand. Your time back.</h2>
-    <p style="font-size:14px;color:#6a7a9a;max-width:500px;margin:0 auto">Every plan starts with one free month. No card needed. Approval mode by default — you see every post before it goes live.</p>
+
+  <!-- HERO INTRO -->
+  <div class="rv" style="text-align:center;padding:80px 40px 40px;max-width:760px;margin:0 auto">
+    <div class="ey" style="justify-content:center;margin-bottom:8px">// Meet Your Team</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,58px);font-weight:400;color:#f0f4ff;line-height:1.1;margin-bottom:16px">Hire <em style="font-style:italic;background:linear-gradient(135deg,#00ccff,#cc44ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">VEXA.</em><br>She does the rest.</h2>
+    <p style="font-family:'Playfair Display',serif;font-weight:400;font-style:italic;font-size:clamp(16px,2vw,22px);color:#8899cc;margin-bottom:24px;line-height:1.5">A creative partner who talks like a human, thinks like a strategist, and never clocks out.</p>
+    <p style="font-size:16px;color:#8899cc;line-height:1.85;font-weight:300;max-width:560px;margin:0 auto 16px">She learns your brand. Your voice. Your style. Your niche. She only knows <strong style="color:#f0f4ff;font-weight:500">your</strong> company. Her only job is to grow <strong style="color:#f0f4ff;font-weight:500">your</strong> business.</p>
+    <p style="font-size:16px;color:#8899cc;line-height:1.85;font-weight:300;max-width:560px;margin:0 auto">Message her at 11pm with a half-baked idea. She'll brainstorm it with you. When you're ready — she builds it. No prompts. No dashboards. <strong style="color:#f0f4ff;font-weight:500">Just a conversation.</strong></p>
+  </div>
+
+  <!-- CONVO DEMO -->
+  <div class="convo-section rv">
+    <div class="convo-inner">
+      <div style="padding-top:8px">
+        <div class="ey">// How She Works</div>
+        <h3 class="convo-text-h">Talk to her like <em>a person.</em></h3>
+        <p class="convo-text-p">VEXA isn't a form you fill out. She's a conversation. Brainstorm freely — she keeps up, asks the right questions, and keeps it short.</p>
+        <p class="convo-text-p"><strong>She knows when you've decided.</strong> You won't get "would you like me to execute this?" every time. When you say "yeah do it" or "love that" — she stops talking and starts working.</p>
+        <p class="convo-text-p">No long paragraphs. No feature dumps. Just a teammate who listens, thinks, and delivers.</p>
+      </div>
+      <div class="convo-phone">
+        <div class="convo-bar"><div class="convo-av"></div><div><div class="convo-name">VEXA</div><div class="convo-status">online</div></div></div>
+        <div class="convo-msgs">
+          <div class="msg msg-u"><div class="msg-label">You</div><p>I'm thinking about a Norse mythology line. Vikings, ravens, that whole world.</p></div>
+          <div class="msg msg-v"><div class="msg-label">VEXA</div><p>Love that. Dark aged bronze or bright silver?</p></div>
+          <div class="msg msg-u"><div class="msg-label">You</div><p>Dark. Weathered. Like it was dug up.</p></div>
+          <div class="msg msg-v"><div class="msg-label">VEXA</div><p>Odin's ravens on a rough stone base. That's your hero piece. Want me to stage a mockup?</p></div>
+          <div class="msg msg-u"><div class="msg-label">You</div><p>Yeah do it</p></div>
+          <div class="msg msg-exec"><div class="msg-label">VEXA — working</div><p>Staged. Caption written. Three variations ready for you.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROMISE STRIP -->
+  <div class="promise-strip-v rv">
+    <div class="promise-inner-v">
+      <div class="promise-card-v"><span class="promise-icon-v">💬</span><div class="promise-h-v">Brainstorm anytime. Free.</div><div class="promise-p-v">Message VEXA whenever inspiration hits. She talks it through with you — short, sharp, human. No limits on conversation.</div></div>
+      <div class="promise-card-v"><span class="promise-icon-v">📊</span><div class="promise-h-v">Weekly report. Every Monday.</div><div class="promise-p-v">What got likes. What drove website clicks. What's not working. Plain English. Every client. Every plan.</div></div>
+      <div class="promise-card-v"><span class="promise-icon-v">💡</span><div class="promise-h-v">Fresh ideas. Every week.</div><div class="promise-p-v">What's trending in your niche right now. With a full brief in your style. Ask and she goes deeper.</div></div>
+    </div>
+  </div>
+
+  <!-- TRAINING -->
+  <div class="train-section rv">
+    <div class="ey" style="justify-content:center">// The First 2 Weeks</div>
+    <h3 class="train-h2">VEXA learns <em>you</em> first.</h3>
+    <p class="train-p2">For the first two weeks every piece of content requires your approval. This isn't a limitation — <strong>it's how she becomes irreplaceable.</strong></p>
+    <div class="train-steps2">
+      <div class="train-step2"><div class="train-num2">1</div><div><div class="train-step-h2">Week 1–2 — Approval Mode</div><div class="train-step-p2">VEXA creates. You approve or adjust. Every yes and every no teaches her your taste, your voice, your standards.</div></div></div>
+      <div class="train-step2"><div class="train-num2">2</div><div><div class="train-step-h2">Week 3+ — Auto Mode Unlocked</div><div class="train-step-p2">You choose when to flip the switch. She posts, reports, and brings ideas — completely hands-off. You just make things.</div></div></div>
+      <div class="train-step2"><div class="train-num2">∞</div><div><div class="train-step-h2">She never stops learning</div><div class="train-step-p2">Month 1 she's good. Month 6 she knows what drives sales for your business better than any human could. That knowledge is yours.</div></div></div>
+    </div>
+  </div>
+
+  <!-- BILLING TOGGLE -->
+  <div style="text-align:center;padding:60px 20px 10px">
+    <div class="billing-toggle-wrap">
+      <span class="btl on" id="btlM">Monthly</span>
+      <label class="bt-tog"><input type="checkbox" id="billingTog" onchange="switchBilling()"><div class="bt-track"></div><div class="bt-thumb"></div></label>
+      <span class="btl" id="btlA">Annual</span>
+      <span class="bt-badge" id="btBadge">Save up to 17%</span>
+    </div>
+    <div class="billing-toggle-sub">First month free · No card required · Cancel anytime</div>
+  </div>
+
+  <!-- 2 PLANS -->
+  <div class="plans-grid">
+
+    <!-- STARTER -->
+    <div class="plan s">
+      <div class="tier">Starter</div>
+      <div class="pname">Starter</div>
+      <div class="ptag">VEXA runs your Instagram and Facebook. Posts daily. Reports weekly. Learns your brand.</div>
+      <div class="mp" id="ms"><span class="psym">$</span><span class="pnum">497</span><span class="pper">/mo</span></div>
+      <div class="ap" id="as"><span class="psym">$</span><span class="pnum">414</span><span class="pper">/mo</span></div>
+      <div class="psave" id="svs">&nbsp;</div>
+      <div class="pfree">First month free · No card needed</div>
+      <a href="#" class="pcta" onclick="event.preventDefault();alert('Stripe links coming soon — contact us on Telegram!')">Hire VEXA — Start Free</a>
+
+      <div class="vexa-does">VEXA handles your —</div>
+
+      <div class="ig2"><div class="ig2-label">Content</div>
+        <div class="ig2-item k"><span class="ig2-dot"></span><span>25 product listing images · up to 5 products</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>20 social media hero images</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Video for every product — cinematic quality</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Reviews 3 variations · delivers the best one</span></div>
+      </div>
+      <div class="ig2"><div class="ig2-label">Platforms</div>
+        <div class="ig2-item k"><span class="ig2-dot"></span><span>Instagram + Facebook — posted daily</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Optimal posting time tracked + used</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Platform-optimised format every post</span></div>
+      </div>
+      <div class="ig2"><div class="ig2-label">Every Post</div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Caption in your exact brand voice</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>SEO optimised — social + Etsy</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Etsy titles, all 13 tags + descriptions</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Hashtag strategy — updated weekly</span></div>
+      </div>
+      <div class="ig2"><div class="ig2-label">Intelligence</div>
+        <div class="ig2-item k"><span class="ig2-dot"></span><span>Weekly report — likes, clicks, what's working</span></div>
+        <div class="ig2-item k"><span class="ig2-dot"></span><span>1 fresh idea per week in your niche</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Full brief — detailed to your style</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Website clicks per platform tracked</span></div>
+      </div>
+      <div class="epn2">✓ Unlimited brainstorming · ✓ 2-week training · ✓ "Too busy" mode</div>
+      <div class="up-hook">Need more platforms and bigger reach? → Upgrade to Growth anytime</div>
+    </div>
+
+    <!-- GROWTH -->
+    <div class="plan g ft">
+      <div class="plh">Most Popular</div>
+      <div class="tier">Growth</div>
+      <div class="pname">Growth</div>
+      <div class="ptag">VEXA runs four platforms. More content. More volume. Same brain, bigger reach.</div>
+      <div class="mp" id="mg"><span class="psym">$</span><span class="pnum">997</span><span class="pper">/mo</span></div>
+      <div class="ap" id="ag"><span class="psym">$</span><span class="pnum">830</span><span class="pper">/mo</span></div>
+      <div class="psave" id="svg">&nbsp;</div>
+      <div class="pfree">First month free · No card needed</div>
+      <a href="#" class="pcta" onclick="event.preventDefault();alert('Stripe links coming soon — contact us on Telegram!')">Hire VEXA — Start Free</a>
+
+      <div class="vexa-does">Everything in Starter, plus —</div>
+
+      <div class="ig2"><div class="ig2-label">More Content</div>
+        <div class="ig2-item k"><span class="ig2-dot"></span><span>48 product listing images · up to 8 products</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>42 social media hero images</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Etsy listing images — optimised and ready</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>2 long videos repurposed into clips/mo</span></div>
+      </div>
+      <div class="ig2"><div class="ig2-label">Bigger Reach</div>
+        <div class="ig2-item k"><span class="ig2-dot"></span><span>Instagram, TikTok, Facebook, Pinterest</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Platform-optimised format every post</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Optimal posting time per platform — tracked weekly</span></div>
+      </div>
+      <div class="ig2"><div class="ig2-label">Deeper Intelligence</div>
+        <div class="ig2-item k"><span class="ig2-dot"></span><span>Weekly content calendar preview</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Hashtag performance improved weekly</span></div>
+        <div class="ig2-item"><span class="ig2-dot"></span><span>Follower growth source tracked</span></div>
+      </div>
+      <div class="epn2">✓ Unlimited brainstorming · ✓ 2-week training · ✓ "Too busy" mode</div>
+    </div>
+
+  </div>
+
+  <!-- EVERY PLAN SECTION -->
+  <div class="every-plan-sec rv">
+    <div class="every-inner2">
+      <h3 class="every-h2">Every plan. <em>Every client.</em></h3>
+      <p class="every-sub2">These aren't upgrades. This is VEXA doing her job.</p>
+      <div class="every-grid2">
+        <div class="every-card2"><div class="ec2-h">Brainstorm Anytime</div><div class="ec2-p">Message VEXA whenever you want. Talk through ideas. She keeps it short and human. No limits. No extra cost.</div></div>
+        <div class="every-card2"><div class="ec2-h">Weekly Report</div><div class="ec2-p">Every Monday — what got likes, what drove website clicks, what to change. Plain English.</div></div>
+        <div class="every-card2"><div class="ec2-h">Weekly Niche Ideas</div><div class="ec2-p">What's trending in your niche. Full brief in your style. Ask and she goes deeper with a how-to.</div></div>
+        <div class="every-card2"><div class="ec2-h">2-Week Training</div><div class="ec2-p">Mandatory approval mode. VEXA learns your brand before she runs on her own. No exceptions.</div></div>
+        <div class="every-card2"><div class="ec2-h">"Too Busy" Mode</div><div class="ec2-p">One message. She pulls your best past content, rewrites it fresh, and keeps you posting.</div></div>
+        <div class="every-card2"><div class="ec2-h">Brand Memory</div><div class="ec2-p">She remembers everything. What worked. What didn't. Your preferences. Gets smarter every week. That knowledge is yours.</div></div>
+      </div>
+    </div>
   </div>
 
   <!-- WHAT THIS REPLACES -->
-<div class="wtr-section">
-  <div class="wtr-inner" onclick="nSay('Most makers spend a thousand dollars or more a month on Facebook and Instagram ads and get very little back. Not because the platforms do not work. Because the content was not compelling enough to stop the scroll in the first place. Paid distribution does not fix bad creative. Thryvo fixes the creative first. When your content is genuinely good, organic reach does what ads never could. And it compounds every single week forever.')">
-    <div class="wtr-left">
-      <div class="wtr-ey">// The Real Problem</div>
-      <div class="wtr-h">"I was spending $1,000 a month on ads and still not seeing real results."</div>
-      <p class="wtr-p">— AJ, Founder. Silversmith. Six kids.<br><br>
-      That is not an unusual story. Most makers burn $1,000+ a month on ads because the content was not compelling enough to stop the scroll in the first place. Paid distribution does not fix weak creative. <strong>Thryvo fixes the content. Then the reach follows.</strong> Organically. Permanently. Getting smarter every single week.</p>
-    </div>
-    <div class="wtr-right">
-      <div class="wtr-row"><div class="wtr-icon">✗</div><div class="wtr-text"><strong>$1,000+/mo Facebook ads</strong> — impressions that disappear the moment you stop paying</div></div>
-      <div class="wtr-row"><div class="wtr-icon">✗</div><div class="wtr-text"><strong>$80+/mo in tools</strong> — Canva, Buffer, ChatGPT, scheduling apps — and you still do all the work</div></div>
-      <div class="wtr-row"><div class="wtr-icon">✗</div><div class="wtr-text"><strong>Hours of your own time</strong> — photographing, editing, captioning, posting every single day</div></div>
-      <div class="wtr-row"><div class="wtr-icon">✓</div><div class="wtr-text"><strong>Thryvo Starter — $297/mo</strong> — AI product images, cinematic video, daily posting, weekly report. All of it done for you. Cancel everything else.</div></div>
+  <div style="max-width:880px;margin:0 auto;padding:40px 20px">
+    <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(0,204,255,0.08);padding:28px 32px;text-align:center" class="rv">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#00ccff;margin-bottom:14px">What You Cancel Today</div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-bottom:16px">
+        <span style="font-size:13px;color:#8899cc;font-weight:300;display:flex;align-items:center;gap:6px"><span style="color:#ff4466;font-weight:500;font-size:11px">✗</span> Canva ~$15/mo</span>
+        <span style="font-size:13px;color:#8899cc;font-weight:300;display:flex;align-items:center;gap:6px"><span style="color:#ff4466;font-weight:500;font-size:11px">✗</span> Buffer ~$18/mo</span>
+        <span style="font-size:13px;color:#8899cc;font-weight:300;display:flex;align-items:center;gap:6px"><span style="color:#ff4466;font-weight:500;font-size:11px">✗</span> ChatGPT ~$20/mo</span>
+        <span style="font-size:13px;color:#8899cc;font-weight:300;display:flex;align-items:center;gap:6px"><span style="color:#ff4466;font-weight:500;font-size:11px">✗</span> Video tool ~$15/mo</span>
+        <span style="font-size:13px;color:#8899cc;font-weight:300;display:flex;align-items:center;gap:6px"><span style="color:#ff4466;font-weight:500;font-size:11px">✗</span> Hours of your time</span>
+      </div>
+      <div style="font-size:14px;color:#f0f4ff;font-weight:400;margin-top:14px;padding-top:14px;border-top:1px solid rgba(0,204,255,0.06)">One conversation. <strong style="color:#00ddaa">VEXA handles everything.</strong></div>
     </div>
   </div>
-</div>
 
-  <!-- ANNUAL TOGGLE -->
-  <div class="billing-toggle-wrap">
-    <span class="btl on" id="btlM">Monthly</span>
-    <label class="bt-tog">
-      <input type="checkbox" id="billingTog" onchange="switchBilling()">
-      <div class="bt-track"></div>
-      <div class="bt-thumb"></div>
-    </label>
-    <span class="btl" id="btlA">Annual</span>
-    <span class="bt-badge" id="btBadge">2 months free</span>
-  </div>
-  <div class="billing-toggle-sub">Switch to annual and save up to $5,004 per year</div>
-
-  <!-- PLAN CARDS -->
-  <div class="plans-grid">
-
-<div class="plan s">
-  <div class="tier">Tier 01</div>
-  <div class="pname">Starter</div>
-  <div class="ptag">Two platforms done brilliantly. Cancel Canva, Buffer and ChatGPT today.</div>
-  <div class="mp" id="ms"><span class="psym">$</span><span class="pnum">497</span><span class="pper">/mo</span></div>
-  <div class="ap" id="as"><span class="psym">$</span><span class="pnum">414</span><span class="pper">/mo</span></div>
-  <div class="psave" id="svs">&nbsp;</div>
-  <div class="pfree">First month free · No card needed</div>
-  <button class="pcta" onclick="handleCTA('STARTER_MONTHLY_LINK','STARTER_ANNUAL_LINK')">Start Free Month</button>
-<button class="plan-expand-btn" onclick="togglePlanDetails(this)"><span>See all features</span><span class="arr">▾</span></button>
-<div class="plan-details">
-  <div class="sl">Images</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>45</strong> AI approved images/mo</span></li>
-<li class="fi"><div class="fd"></div><span>25 product listing images · up to 5 products</span></li>
-<li class="fi"><div class="fd"></div><span>20 social media hero images</span></li>
-<li class="fi hi"><div class="fd"></div><span>Boss reviews 3 variations · delivers the best one</span></li>
-</ul>
-<div class="sl">Videos</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>15</strong> approved cinematic videos/mo</span></li>
-<li class="fi"><div class="fd"></div><span>Runway Gen-4 quality on every video</span></li>
-<li class="fi"><div class="fd"></div><span>Boss selects best of 3 variations</span></li>
-</ul>
-<div class="sl">Platforms</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Instagram + Facebook — posted daily</span></li>
-<li class="fi"><div class="fd"></div><span>Optimal posting time tracked + used</span></li>
-<li class="fi"><div class="fd"></div><span>Platform-optimised format every post</span></li>
-</ul>
-<div class="sl">Every post includes</div>
-<ul class="feat-list">
-<li class="fi"><div class="fd"></div><span>Caption in your exact brand voice</span></li>
-<li class="fi hi"><div class="fd"></div><span>SEO optimised description — social + Etsy</span></li>
-<li class="fi hi"><div class="fd"></div><span>Etsy listing titles, tags + descriptions optimised</span></li>
-<li class="fi"><div class="fd"></div><span>Hashtag strategy — updated weekly</span></li>
-<li class="fi hi"><div class="fd"></div><span>5-star reviews turned into social proof posts</span></li>
-</ul>
-<div class="sl">Busy week</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>"Freshen up old posts" — one message, VEXA handles everything</span></li>
-<li class="fi"><div class="fd"></div><span>Best past content rewritten + scheduled automatically</span></li>
-<li class="fi"><div class="fd"></div><span>Your posting never stops — even your busiest weeks</span></li>
-</ul>
-<div class="sl">Intelligence</div>
-<ul class="feat-list">
-<li class="fi"><div class="fd"></div><span>Monthly performance report</span></li>
-<li class="fi"><div class="fd"></div><span>Best post explained in plain English</span></li>
-<li class="fi"><div class="fd"></div><span>Website clicks per platform tracked</span></li>
-</ul>
-<div class="sl">Your Team</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Your personal VEXA on Telegram</span></li>
-<li class="fi"><div class="fd"></div><span>Starts in approval mode — you see every post first</span></li>
-<li class="fi"><div class="fd"></div><span>Switch to auto mode when you are ready</span></li>
-</ul>
-<div class="up-hook">Replaces Canva + Buffer + ChatGPT + your time</div></div>
-</div>
-
-<div class="plan g">
-  <div class="tier">Tier 02</div>
-  <div class="pname">Growth</div>
-  <div class="ptag">Four platforms. Weekly intelligence. Product ideas every week.</div>
-  <div class="mp" id="mg"><span class="psym">$</span><span class="pnum">997</span><span class="pper">/mo</span></div>
-  <div class="ap" id="ag"><span class="psym">$</span><span class="pnum">830</span><span class="pper">/mo</span></div>
-  <div class="psave" id="svg">&nbsp;</div>
-  <div class="pfree">First month free · No card needed</div>
-  <button class="pcta" onclick="handleCTA('GROWTH_MONTHLY_LINK','GROWTH_ANNUAL_LINK')">Start Free Month</button>
-<button class="plan-expand-btn" onclick="togglePlanDetails(this)"><span>See all features</span><span class="arr">▾</span></button>
-<div class="plan-details">
-  <div class="sl">Images</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>90</strong> AI approved images/mo</span></li>
-<li class="fi"><div class="fd"></div><span>48 product listing images · up to 8 products</span></li>
-<li class="fi"><div class="fd"></div><span>42 social media hero images</span></li>
-<li class="fi hi"><div class="fd"></div><span>Boss reviews 3 variations · delivers the best one</span></li>
-<li class="fi hi"><div class="fd"></div><span>Etsy listing images — optimised and ready</span></li>
-</ul>
-<div class="sl">Videos</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>30</strong> approved cinematic videos/mo</span></li>
-<li class="fi"><div class="fd"></div><span>Runway Gen-4 quality on every video</span></li>
-<li class="fi"><div class="fd"></div><span>Boss selects best of 3 variations</span></li>
-<li class="fi hi"><div class="fd"></div><span>2 long videos repurposed into clips/mo</span></li>
-</ul>
-<div class="sl">Platforms</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Instagram, TikTok, Facebook, Pinterest</span></li>
-<li class="fi"><div class="fd"></div><span>Platform-optimised format every post</span></li>
-<li class="fi"><div class="fd"></div><span>Optimal posting time per platform — tracked weekly</span></li>
-</ul>
-<div class="sl">Every post includes</div>
-<ul class="feat-list">
-<li class="fi"><div class="fd"></div><span>Caption in your exact brand voice</span></li>
-<li class="fi hi"><div class="fd"></div><span>SEO optimised description — social + Etsy</span></li>
-<li class="fi hi"><div class="fd"></div><span>Etsy listing titles, tags + descriptions optimised</span></li>
-<li class="fi"><div class="fd"></div><span>Hashtag performance improved weekly</span></li>
-<li class="fi hi"><div class="fd"></div><span>5-star reviews turned into social proof posts</span></li>
-</ul>
-<div class="sl">Busy week</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>"Freshen up old posts" — one message, VEXA handles everything</span></li>
-<li class="fi"><div class="fd"></div><span>Best past content rewritten + scheduled automatically</span></li>
-</ul>
-<div class="sl">Intelligence</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Weekly intelligence report</span></li>
-<li class="fi hi"><div class="fd"></div><span>1 product idea per week — trend driven</span></li>
-<li class="fi"><div class="fd"></div><span>Full brief — recipe, formula or design direction</span></li>
-<li class="fi"><div class="fd"></div><span>Weekly content calendar preview</span></li>
-<li class="fi"><div class="fd"></div><span>Follower growth source tracked weekly</span></li>
-</ul>
-<div class="sl">Your Team</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Your personal VEXA on Telegram</span></li>
-<li class="fi"><div class="fd"></div><span>Starts in approval mode — you see every post first</span></li>
-<li class="fi"><div class="fd"></div><span>Switch to auto mode when you are ready</span></li>
-</ul>
-<div class="up-hook">Replaces a part time social media manager</div></div>
-</div>
-
-<div class="plan p ft">
-  <div class="hot">⚡ Most Popular</div>
-<div class="tier">Tier 03</div>
-  <div class="pname">Pro</div>
-  <div class="ptag">Six platforms. Website photography. Full content and growth engine.</div>
-  <div class="mp" id="mp2"><span class="psym">$</span><span class="pnum">1,497</span><span class="pper">/mo</span></div>
-  <div class="ap" id="ap2"><span class="psym">$</span><span class="pnum">1,247</span><span class="pper">/mo</span></div>
-  <div class="psave" id="svp2">&nbsp;</div>
-  <div class="pfree">First month free · No card needed</div>
-  <button class="pcta" onclick="handleCTA('PRO_MONTHLY_LINK','PRO_ANNUAL_LINK')">Start Free Month</button>
-<button class="plan-expand-btn" onclick="togglePlanDetails(this)"><span>See all features</span><span class="arr">▾</span></button>
-<div class="plan-details">
-  <div class="sl">Images</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>180</strong> AI approved images/mo</span></li>
-<li class="fi"><div class="fd"></div><span>90 product listing images · up to 15 products</span></li>
-<li class="fi"><div class="fd"></div><span>90 social media hero images</span></li>
-<li class="fi hi"><div class="fd"></div><span>Boss reviews 3 variations · delivers the best one</span></li>
-<li class="fi hi"><div class="fd"></div><span>Website product photography suite</span></li>
-<li class="fi"><div class="fd"></div><span>Etsy listing images — optimised and ready</span></li>
-</ul>
-<div class="sl">Videos</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>45</strong> approved cinematic videos/mo</span></li>
-<li class="fi"><div class="fd"></div><span>Runway Gen-4 quality on every video</span></li>
-<li class="fi"><div class="fd"></div><span>Boss selects best of 3 variations</span></li>
-<li class="fi hi"><div class="fd"></div><span>4 long videos repurposed into clips/mo</span></li>
-<li class="fi hi"><div class="fd"></div><span>2 SEO blog posts written monthly</span></li>
-<li class="fi hi"><div class="fd"></div><span>Email newsletter written + sent monthly</span></li>
-</ul>
-<div class="sl">Platforms</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>6 platforms + YouTube Shorts</span></li>
-<li class="fi"><div class="fd"></div><span>Platform-optimised format every post</span></li>
-<li class="fi"><div class="fd"></div><span>Optimal posting time per platform</span></li>
-</ul>
-<div class="sl">Every post includes</div>
-<ul class="feat-list">
-<li class="fi"><div class="fd"></div><span>Caption in your exact brand voice</span></li>
-<li class="fi hi"><div class="fd"></div><span>SEO optimised description — social + Etsy</span></li>
-<li class="fi hi"><div class="fd"></div><span>Etsy listing titles, tags + descriptions optimised</span></li>
-<li class="fi hi"><div class="fd"></div><span>Full comment + DM management</span></li>
-<li class="fi hi"><div class="fd"></div><span>5-star reviews turned into social proof posts</span></li>
-</ul>
-<div class="sl">Busy week</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>"Freshen up old posts" — one message, VEXA handles everything</span></li>
-<li class="fi"><div class="fd"></div><span>Best past content rewritten + scheduled automatically</span></li>
-</ul>
-<div class="sl">Intelligence</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Weekly intelligence report — full depth</span></li>
-<li class="fi hi"><div class="fd"></div><span>2 product ideas per week — trend driven</span></li>
-<li class="fi"><div class="fd"></div><span>Audience sentiment analysis weekly</span></li>
-<li class="fi"><div class="fd"></div><span>Google Analytics 4 integration</span></li>
-<li class="fi"><div class="fd"></div><span>Click to website conversion tracked</span></li>
-<li class="fi"><div class="fd"></div><span>Monthly brand performance report</span></li>
-</ul>
-<div class="sl">Your Team</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Your personal VEXA on Telegram</span></li>
-<li class="fi"><div class="fd"></div><span>Starts in approval mode — you see every post first</span></li>
-<li class="fi"><div class="fd"></div><span>Switch to auto mode when you are ready</span></li>
-</ul>
-<div class="up-hook">Replaces a full service content agency</div></div>
-</div>
-
-<div class="plan e">
-  <div class="tier">Tier 04</div>
-  <div class="pname">Elite</div>
-  <div class="ptag">Fully managed. All platforms. Your entire digital presence handled while you make things.</div>
-  <div class="mp" id="me"><span class="psym">$</span><span class="pnum">2,497</span><span class="pper">/mo</span></div>
-  <div class="ap" id="ae"><span class="psym">$</span><span class="pnum">2,080</span><span class="pper">/mo</span></div>
-  <div class="psave" id="sve">&nbsp;</div>
-  <div class="pfree">First month free · No card needed</div>
-  <button class="pcta" onclick="handleCTA('ELITE_MONTHLY_LINK','ELITE_ANNUAL_LINK')">Apply for Elite</button>
-<button class="plan-expand-btn" onclick="togglePlanDetails(this)"><span>See all features</span><span class="arr">▾</span></button>
-<div class="plan-details">
-  <div class="sl">Images</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span><strong>270</strong> AI approved images/mo</span></li>
-<li class="fi"><div class="fd"></div><span>150 product listing images · up to 25 products</span></li>
-<li class="fi"><div class="fd"></div><span>120 social media hero images</span></li>
-<li class="fi hi"><div class="fd"></div><span>Boss reviews 3 variations · delivers the best one</span></li>
-<li class="fi hi"><div class="fd"></div><span>Website product photography — full suite</span></li>
-<li class="fi hi"><div class="fd"></div><span>Etsy + shop listings fully rewritten monthly</span></li>
-</ul>
-<div class="sl">Videos</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Unlimited video — platform optimal daily volume</span></li>
-<li class="fi"><div class="fd"></div><span>Capped at what each platform's algorithm rewards</span></li>
-<li class="fi"><div class="fd"></div><span>Runway Gen-4 quality on every video</span></li>
-<li class="fi"><div class="fd"></div><span>Boss selects best of 3 variations</span></li>
-<li class="fi hi"><div class="fd"></div><span>Full video repurposing suite — all formats</span></li>
-</ul>
-<div class="sl">Platforms</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>All platforms — nothing excluded</span></li>
-<li class="fi"><div class="fd"></div><span>Platform strategy reviewed quarterly</span></li>
-</ul>
-<div class="sl">Every post includes</div>
-<ul class="feat-list">
-<li class="fi"><div class="fd"></div><span>Caption in your exact brand voice</span></li>
-<li class="fi hi"><div class="fd"></div><span>SEO optimised description — social + Etsy</span></li>
-<li class="fi hi"><div class="fd"></div><span>Etsy listing titles, tags + descriptions optimised</span></li>
-<li class="fi hi"><div class="fd"></div><span>Full community management — all platforms</span></li>
-<li class="fi hi"><div class="fd"></div><span>Email marketing — full auto sequences</span></li>
-<li class="fi hi"><div class="fd"></div><span>Ad creative generated — ready to run</span></li>
-<li class="fi hi"><div class="fd"></div><span>5-star reviews turned into social proof posts</span></li>
-</ul>
-<div class="sl">Busy week</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>"Freshen up old posts" — one message, VEXA handles everything</span></li>
-<li class="fi"><div class="fd"></div><span>Best past content rewritten + scheduled automatically</span></li>
-</ul>
-<div class="sl">Intelligence</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Weekly intelligence report — full depth</span></li>
-<li class="fi hi"><div class="fd"></div><span>3 product ideas per week — trend driven</span></li>
-<li class="fi hi"><div class="fd"></div><span>Revenue attribution — post to sale tracked</span></li>
-<li class="fi"><div class="fd"></div><span>Quarterly brand audit report</span></li>
-<li class="fi"><div class="fd"></div><span>Google Analytics 4 deep integration</span></li>
-</ul>
-<div class="sl">Your Team</div>
-<ul class="feat-list">
-<li class="fi hi"><div class="fd"></div><span>Your personal VEXA on Telegram — priority</span></li>
-<li class="fi"><div class="fd"></div><span>Starts in approval mode — you see every post first</span></li>
-<li class="fi"><div class="fd"></div><span>Switch to auto mode when you are ready</span></li>
-<li class="fi hi"><div class="fd"></div><span>Monthly growth strategy session with Thryvo AI specialist</span></li>
-<li class="fi"><div class="fd"></div><span>Same-day issue resolution</span></li>
-<li class="fi"><div class="fd"></div><span>First access to every new feature</span></li>
-<li class="fi hi"><div class="fd"></div><span>White label option — coming soon</span></li>
-</ul>
-<div class="up-hook">Replaces an entire marketing department</div></div>
-</div>
-
-  </div>
-
-  <!-- WHAT THIS REPLACES BAR -->
-  <div class="replaces">
-<div class="rep"><div class="rep-label s">Starter replaces</div><div class="rep-val">$80–$150</div><div class="rep-sub">in tools you still have to use yourself</div></div><div class="rep"><div class="rep-label g">Growth replaces</div><div class="rep-val">$1,500–$3,000</div><div class="rep-sub">in freelancer costs per month</div></div><div class="rep"><div class="rep-label p">Pro replaces</div><div class="rep-val">$3,000–$6,000</div><div class="rep-sub">in agency costs per month</div></div><div class="rep"><div class="rep-label e">Elite replaces</div><div class="rep-val">$6,000–$12,000</div><div class="rep-sub">in full-service agency per month</div></div>
-  </div>
 </div>
 
 <div class="dv"></div>
@@ -1588,7 +1531,7 @@ document.querySelectorAll('.rv').forEach(el=>
 
 
 var annualMode=false;
-var saves={s:'Save $996/yr · billed $4,968 annually',g:'Save $2,004/yr · billed $9,960 annually',p:'Save $3,000/yr · billed $14,964 annually',e:'Save $5,004/yr · billed $24,960 annually'};
+var saves={s:'Save $996/yr · billed $4,968 annually',g:'Save $2,004/yr · billed $9,960 annually'};
 function togglePlanDetails(btn){
   var details = btn.nextElementSibling;
   var isOpen = details.classList.contains('expanded');
